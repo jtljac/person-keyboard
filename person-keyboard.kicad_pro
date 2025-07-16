@@ -485,6 +485,36 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.2,
+        "name": "3v3",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2
+      },
+      {
+        "clearance": 0.25,
+        "name": "5v",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.25
+      },
+      {
+        "clearance": 0.2,
+        "diff_pair_gap": 0.2,
+        "diff_pair_width": 0.34,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "USB Data",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.35,
+        "via_diameter": 0.6,
+        "via_drill": 0.3
       }
     ],
     "meta": {
@@ -492,7 +522,20 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "USB Data",
+        "pattern": "/d*"
+      },
+      {
+        "netclass": "3v3",
+        "pattern": "+3V3"
+      },
+      {
+        "netclass": "5v",
+        "pattern": "+5V"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -653,6 +696,10 @@
     [
       "9215f855-2557-4e09-a4c4-10c2761e1674",
       "Keyboard Matrix"
+    ],
+    [
+      "533e0b35-a068-4b75-887f-205270f8b12e",
+      "LED Backlighting"
     ]
   ],
   "text_variables": {}
