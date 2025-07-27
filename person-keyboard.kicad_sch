@@ -841,7 +841,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Crystal_GND23"
+		(symbol "Device:Crystal_GND24"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -858,7 +858,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "Crystal_GND23"
+			(property "Value" "Crystal_GND24"
 				(at 3.175 3.175 0)
 				(effects
 					(font
@@ -885,7 +885,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Four pin crystal, GND on pins 2 and 3"
+			(property "Description" "Four pin crystal, GND on pins 2 and 4"
 				(at 0 0 0)
 				(effects
 					(font
@@ -912,7 +912,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Crystal_GND23_0_1"
+			(symbol "Crystal_GND24_0_1"
 				(polyline
 					(pts
 						(xy -2.54 2.286) (xy -2.54 3.556) (xy 2.54 3.556) (xy 2.54 2.286)
@@ -1021,7 +1021,7 @@
 					)
 				)
 			)
-			(symbol "Crystal_GND23_1_1"
+			(symbol "Crystal_GND24_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 1.27)
@@ -1061,14 +1061,14 @@
 				(pin passive line
 					(at 0 -5.08 90)
 					(length 1.27)
-					(name "3"
+					(name "4"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1079,14 +1079,14 @@
 				(pin passive line
 					(at 3.81 0 180)
 					(length 1.27)
-					(name "4"
+					(name "3"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "4"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2710,7 +2710,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PCM_Diode_Schottky_AKL:B340A"
+		(symbol "PCM_Diode_Schottky_AKL:D_Schottky_Generic"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2722,6 +2722,14 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "D"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Schottky_Generic"
 				(at 0 5.08 0)
 				(effects
 					(font
@@ -2729,15 +2737,7 @@
 					)
 				)
 			)
-			(property "Value" "B340A"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "PCM_Diode_SMD_AKL:D_SMA"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -2746,7 +2746,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.tme.eu/Document/bc0c2a3750e4027ba573945af2a701a7/B320A-13-F.pdf"
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2755,7 +2755,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "SMA Schottky diode, 40V, 3A, Alternate KiCAD Library"
+			(property "Description" "Schottky diode, Generic Symbol, Alternate KiCAD Library"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2764,7 +2764,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "diode Schottky B340A"
+			(property "ki_keywords" "diode Schottky generic"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2782,7 +2782,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "B340A_0_1"
+			(symbol "D_Schottky_Generic_0_1"
 				(polyline
 					(pts
 						(xy -1.27 0) (xy 1.27 0)
@@ -2820,7 +2820,7 @@
 					)
 				)
 			)
-			(symbol "B340A_0_2"
+			(symbol "D_Schottky_Generic_0_2"
 				(polyline
 					(pts
 						(xy -2.54 -2.54) (xy 2.54 2.54)
@@ -2882,7 +2882,7 @@
 					)
 				)
 			)
-			(symbol "B340A_1_1"
+			(symbol "D_Schottky_Generic_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -2920,7 +2920,7 @@
 					)
 				)
 			)
-			(symbol "B340A_1_2"
+			(symbol "D_Schottky_Generic_1_2"
 				(pin passive line
 					(at -2.54 -2.54 0)
 					(length 0)
@@ -4091,6 +4091,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:VCC"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "VCC"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VCC\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VCC_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VCC_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(rectangle
 		(start 13.97 62.23)
@@ -4106,7 +4231,7 @@
 	)
 	(rectangle
 		(start 13.97 127)
-		(end 64.77 193.04)
+		(end 88.9 193.04)
 		(stroke
 			(width 0)
 			(type dash)
@@ -4250,6 +4375,12 @@
 		(uuid "097b57cb-08f1-416c-86c0-55c455df77dd")
 	)
 	(junction
+		(at 115.57 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0edbf41e-becb-4601-ad9e-7aaec7af7861")
+	)
+	(junction
 		(at 162.56 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4320,12 +4451,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "60792162-afe7-4296-93f8-1c03917fce4d")
-	)
-	(junction
-		(at 135.89 39.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6163b876-5a36-43a9-a75c-b98ffb416785")
 	)
 	(junction
 		(at 96.52 128.27)
@@ -4406,12 +4531,6 @@
 		(uuid "c01568fd-0767-48c2-8abc-f31d63df869f")
 	)
 	(junction
-		(at 127 39.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c2217b3c-ce6f-472d-94cc-32fc4b4d276d")
-	)
-	(junction
 		(at 22.86 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4481,16 +4600,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 39.37) (xy 135.89 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02679321-4fc5-4816-8c97-6f3abf9aaca0")
-	)
-	(wire
-		(pts
 			(xy 54.61 138.43) (xy 59.69 138.43)
 		)
 		(stroke
@@ -4521,7 +4630,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 39.37) (xy 135.89 44.45)
+			(xy 135.89 31.75) (xy 135.89 44.45)
 		)
 		(stroke
 			(width 0)
@@ -4591,13 +4700,13 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 31.75) (xy 135.89 39.37)
+			(xy 71.12 184.15) (xy 73.66 184.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "10fce9f6-d4a0-453d-86c2-30959bf55826")
+		(uuid "11221dfe-3353-472a-8b62-04ddcec534ee")
 	)
 	(wire
 		(pts
@@ -4821,6 +4930,16 @@
 	)
 	(wire
 		(pts
+			(xy 81.28 184.15) (xy 85.09 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "335339bc-d510-4811-b8d5-508c06576747")
+	)
+	(wire
+		(pts
 			(xy 17.78 33.02) (xy 19.05 33.02)
 		)
 		(stroke
@@ -4988,16 +5107,6 @@
 			(type default)
 		)
 		(uuid "49a1c1ff-4504-4998-9a3e-c50bf5a65108")
-	)
-	(wire
-		(pts
-			(xy 55.88 74.93) (xy 58.42 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a4d06e3-c44b-46ea-98e4-332008ea752f")
 	)
 	(wire
 		(pts
@@ -5481,6 +5590,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 39.37) (xy 115.57 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2785ea7-08b7-4311-b311-5bf9e2e49b74")
+	)
+	(wire
+		(pts
 			(xy 208.28 39.37) (xy 219.71 39.37)
 		)
 		(stroke
@@ -5488,6 +5607,16 @@
 			(type default)
 		)
 		(uuid "b7d23f97-3db5-438b-978c-312bd42009e7")
+	)
+	(wire
+		(pts
+			(xy 59.69 184.15) (xy 63.5 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7e94f16-dbc4-4229-861d-d27f3229953e")
 	)
 	(wire
 		(pts
@@ -5571,16 +5700,6 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 74.93) (xy 69.85 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c811d580-719a-457b-952b-9ae56030b897")
-	)
-	(wire
-		(pts
 			(xy 44.45 171.45) (xy 48.26 171.45)
 		)
 		(stroke
@@ -5628,6 +5747,16 @@
 			(type default)
 		)
 		(uuid "d09664b1-b033-4268-9a99-28ca59d05f89")
+	)
+	(wire
+		(pts
+			(xy 104.14 40.64) (xy 104.14 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d11bae2d-72de-48c0-8b7f-98ea7b19d9ec")
 	)
 	(wire
 		(pts
@@ -7295,72 +7424,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 31.75 157.48 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5cd40f68-621b-462a-ab86-16e41887f08b")
-		(property "Reference" "#PWR012"
-			(at 31.75 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 31.75 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 31.75 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 31.75 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 31.75 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4c5b649a-2546-4a19-a630-36bac235b12e")
-		)
-		(instances
-			(project "person-keyboard"
-				(path "/0b898f65-1e2f-4a4e-92cd-8ce3f937fe7d"
-					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 54.61 146.05 180)
 		(unit 1)
@@ -7453,7 +7516,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "jacob-libs:SW-SMD_L4.0-W2.9-LS5.0"
 			(at 99.06 59.69 0)
 			(effects
 				(font
@@ -7490,6 +7553,74 @@
 			(project ""
 				(path "/0b898f65-1e2f-4a4e-92cd-8ce3f937fe7d"
 					(reference "SW106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_Schottky_AKL:D_Schottky_Generic")
+		(at 77.47 184.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "62738f99-3cb5-4775-82e3-78de50f68144")
+		(property "Reference" "D106"
+			(at 77.7875 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N5819"
+			(at 77.7875 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 77.47 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode, Generic Symbol, Alternate KiCAD Library"
+			(at 77.47 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "346666a6-08e8-4fd1-a14b-03e1fe6ce066")
+		)
+		(pin "1"
+			(uuid "e89bb6e1-cc87-444a-8be8-9a6ef2e26327")
+		)
+		(instances
+			(project "person-keyboard"
+				(path "/0b898f65-1e2f-4a4e-92cd-8ce3f937fe7d"
+					(reference "D106")
 					(unit 1)
 				)
 			)
@@ -7771,7 +7902,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 69.85 74.93 0)
+		(at 85.09 184.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7780,7 +7911,7 @@
 		(fields_autoplaced yes)
 		(uuid "7fa78557-61bc-4e8e-8794-ca1af3028152")
 		(property "Reference" "#PWR05"
-			(at 69.85 78.74 0)
+			(at 85.09 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7789,7 +7920,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 69.85 69.85 0)
+			(at 85.09 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7797,7 +7928,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 69.85 74.93 0)
+			(at 85.09 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7806,7 +7937,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 74.93 0)
+			(at 85.09 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7815,7 +7946,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 69.85 74.93 0)
+			(at 85.09 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7827,7 +7958,7 @@
 			(uuid "a0215c3c-4986-456c-ad34-a75ed49db03b")
 		)
 		(instances
-			(project ""
+			(project "person-keyboard"
 				(path "/0b898f65-1e2f-4a4e-92cd-8ce3f937fe7d"
 					(reference "#PWR05")
 					(unit 1)
@@ -8056,33 +8187,17 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_Diode_Schottky_AKL:B340A")
-		(at 62.23 74.93 0)
+		(lib_id "power:VCC")
+		(at 59.69 184.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "9217b346-8c7b-4d63-8e48-ddd7c4828b46")
-		(property "Reference" "D106"
-			(at 62.5475 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "B340A"
-			(at 62.5475 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PCM_Diode_SMD_AKL:D_SMA"
-			(at 62.23 74.93 0)
+		(uuid "9124ec33-09b2-4104-8f1d-dd2d54344f6e")
+		(property "Reference" "#PWR024"
+			(at 59.69 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8090,8 +8205,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.tme.eu/Document/bc0c2a3750e4027ba573945af2a701a7/B320A-13-F.pdf"
-			(at 62.23 74.93 0)
+		(property "Value" "VCC"
+			(at 59.69 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 59.69 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8099,8 +8222,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "SMA Schottky diode, 40V, 3A, Alternate KiCAD Library"
-			(at 62.23 74.93 0)
+		(property "Datasheet" ""
+			(at 59.69 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 59.69 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8109,22 +8241,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "795fa460-7fb4-42c1-b261-cdf12949f9a4")
-		)
-		(pin "2"
-			(uuid "7ca8af59-e2ec-4dc9-b982-556b789a07d8")
+			(uuid "2f14930f-a1d5-4e9d-b838-d2fd9edb4ad5")
 		)
 		(instances
-			(project ""
+			(project "person-keyboard"
 				(path "/0b898f65-1e2f-4a4e-92cd-8ce3f937fe7d"
-					(reference "D106")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:Crystal_GND23")
+		(lib_id "Device:Crystal_GND24")
 		(at 96.52 115.57 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8166,7 +8295,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Four pin crystal, GND on pins 2 and 3"
+		(property "Description" "Four pin crystal, GND on pins 2 and 4"
 			(at 96.52 115.57 0)
 			(effects
 				(font
@@ -8406,10 +8535,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a4e72888-77b4-414b-b31a-490680591294")
 		(property "Reference" "U1"
-			(at 140.5733 147.32 0)
+			(at 137.414 102.616 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8418,7 +8546,7 @@
 			)
 		)
 		(property "Value" "RP2040"
-			(at 140.5733 149.86 0)
+			(at 137.414 105.156 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8426,7 +8554,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm"
+		(property "Footprint" "jacob-libs:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm_vias"
 			(at 138.43 102.87 0)
 			(effects
 				(font
@@ -8938,6 +9066,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Datasheet" "~"
@@ -9182,6 +9311,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 104.14 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dd23575f-c7c1-4a17-8ab7-d5b36b989996")
+		(property "Reference" "#PWR025"
+			(at 104.14 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 104.14 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 104.14 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6070cf00-198a-4100-b090-3a383363155f")
+		)
+		(instances
+			(project "person-keyboard"
+				(path "/0b898f65-1e2f-4a4e-92cd-8ce3f937fe7d"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:USB_C_Receptacle_USB2.0_16P")
 		(at 30.48 90.17 0)
 		(unit 1)
@@ -9356,6 +9551,72 @@
 			(project "person-keyboard"
 				(path "/0b898f65-1e2f-4a4e-92cd-8ce3f937fe7d"
 					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 31.75 157.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e0718117-3301-4a0f-8eec-f86f703aecf2")
+		(property "Reference" "#PWR012"
+			(at 31.75 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 31.75 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 31.75 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cd0eea2a-a0c0-41e8-8a7a-c7bfcd2d4366")
+		)
+		(instances
+			(project "person-keyboard"
+				(path "/0b898f65-1e2f-4a4e-92cd-8ce3f937fe7d"
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -9566,6 +9827,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 48.26 74.93 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f1f3ba8f-2e1b-417d-a8a6-f0bedf16a297")
+		(property "Reference" "#PWR023"
+			(at 44.45 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 52.07 74.9299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.26 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 48.26 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "310189da-7a4c-4cf1-be6d-bec17a64475f")
+		)
+		(instances
+			(project ""
+				(path "/0b898f65-1e2f-4a4e-92cd-8ce3f937fe7d"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 22.86 33.02 90)
 		(unit 1)
@@ -9723,7 +10051,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 30.48 118.4148 0)
 			(effects
 				(font
@@ -9767,7 +10095,7 @@
 	)
 	(symbol
 		(lib_id "Device:Polyfuse")
-		(at 52.07 74.93 90)
+		(at 67.31 184.15 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9776,7 +10104,7 @@
 		(fields_autoplaced yes)
 		(uuid "fc1a1071-5899-4c53-8ead-f6b19eb41ad9")
 		(property "Reference" "F1"
-			(at 52.07 68.58 90)
+			(at 67.31 177.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9784,7 +10112,7 @@
 			)
 		)
 		(property "Value" "500mA"
-			(at 52.07 71.12 90)
+			(at 67.31 180.34 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9792,7 +10120,7 @@
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_0805_2012Metric"
-			(at 57.15 73.66 0)
+			(at 72.39 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9802,7 +10130,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 52.07 74.93 0)
+			(at 67.31 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9811,7 +10139,7 @@
 			)
 		)
 		(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
-			(at 52.07 74.93 0)
+			(at 67.31 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9826,7 +10154,7 @@
 			(uuid "fb81f231-693a-452e-90c7-02a7f7e09c48")
 		)
 		(instances
-			(project ""
+			(project "person-keyboard"
 				(path "/0b898f65-1e2f-4a4e-92cd-8ce3f937fe7d"
 					(reference "F1")
 					(unit 1)
